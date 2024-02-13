@@ -3,3 +3,4 @@ function getDate() {
 }
 
 console.log(getDate())
+
