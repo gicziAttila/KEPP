@@ -34,11 +34,40 @@
     }
 </style>
 <body>
-    <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Esemény létrehozása
-  </button>
-  
+    <nav class="navbar navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menü</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <button type="button" class="btn btn-light mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Esemény létrehozása
+                  </button>
+                    <li class="nav-item">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Válassza ki mi szerint szeretne szűrni</option>
+                            <option value="1">Város</option>
+                            <option value="2">Szervező</option>
+                            <option value="3">Dátum</option>
+                        </select>
+                    </li>
+                <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="text">
+                    <button class="btn btn-success" type="submit">Keresés</button>
+                </form>
+                <button type="button" class="btn btn-danger mt-3">Kijelentkezés</button>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -73,7 +102,7 @@
     </div>
   </div>
     <div class="container-fluid d-flex justify-content-center align-items-center flex-column kontener" style="display: block;">
-        <div class="row">
+        <div class="row mb-3">
             <div class="col-sm-4">
               <div class="card glass">
                 <div class="card-body">
@@ -144,6 +173,30 @@
                   </div>
                 </div>
               </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="card glass">
+                    <div class="card-body">
+                      <h5 class="card-title">Mangec</h5>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text glass" id="basic-addon2">Város:</span>
+                        <input type="text" class="form-control glass" value="Tatabánya" disabled>
+                      </div>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text glass" id="basic-addon2">Szervező:</span>
+                        <input type="text" class="form-control glass" value="kissJanos12" disabled>
+                      </div>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text glass" id="basic-addon2">Dátum:</span>
+                        <input type="date" class="form-control glass" value="2024-02-13" disabled>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Leírás</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" disabled>Naon jó lesz</textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
           </div>
 </body>
 <script>
