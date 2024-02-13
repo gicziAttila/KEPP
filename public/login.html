@@ -26,20 +26,25 @@
       to avoid connecting the SDK to running emulators.
     -->
     <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <link rel="stylesheet" href="css/login.css">
     <title>Login</title>
 </head>
 
 <body>
-    <div class="container-fluid d-flex justify-content-center align-items-center flex-column" style="display: block;">
-        <form id="login_form" class="d-flex align-items-center w-50 text-center flex-column p-5 mt-4">
-            <h1>Bejelntkezés</h1>
+    <div class="container-fluid d-flex justify-content-center align-items-center flex-column kontener" style="display: block;">
+        <form class="d-flex align-items-center w-50 text-center flex-column p-5 mt-4 glass" id="login_form">
+            <p class="text-light mb-3 fs-1"><strong>K</strong>özösségi <strong>E</strong>semények <strong>P</strong>ortálja</p>
             <div class="mb-3">
-                <input type="email" class="form-control" placeholder="Email" id="email_input" required>
+                <input type="email" class="form-control" placeholder="Email cím" id="email_input" required>
             </div>
             <div class="mb-3">
                 <input type="password" class="form-control" placeholder="Jelszó" id="password_input" required>
             </div>
-            <input type="submit" class="btn-primary border rounded">
+                <button type="submit" class="btn btn-light">Bejelentkezés</button>
+            <div class="line mt-4"></div>
+            <div class="mt-3">
+                <a class="text-light linkStyle" href="signup.html">Ha még nem rendelkezel fiókkal kattints ide</a>
+            </div>
         </form>
     </div>
 
@@ -70,6 +75,7 @@
                 .then(function (userCredential) {
                     var user = userCredential.user;
                     console.log("Sikeres bejelentkezés:", user);
+                    window.location.href = "index.html"
                 })
                 .catch(function (error) {
                     var errorCode = error.code;
