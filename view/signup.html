@@ -5,22 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <title>Singup</title>
+    <title>Signup</title>
 </head>
+<style>
+    body {
+      background-image: url('/assets/background.svg');
+      background-repeat: no-repeat;
+    }
+    .kontener{
+        height: 100vh;
+    }
+    .glass{
+        background: rgba(255, 255, 255, 0.23);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(4.8px);
+        -webkit-backdrop-filter: blur(4.8px);
+    }
+    .linkStyle{
+        text-decoration: none;
+    }
+    .line {
+        width: 100%;
+        height: 0;
+        border: 1px solid #FFFFFF;
+        margin: 3px;
+        display:inline-block;
+    }
+</style>
 <body>
-    <div class="container-fluid d-flex justify-content-center align-items-center flex-column" style="display: block;">
-        <form class="d-flex align-items-center w-50 text-center flex-column p-5 mt-4" id="registrationForm">
-            <h1>Regisztráció</h1>
+    <div class="container-fluid d-flex justify-content-center align-items-center flex-column kontener" style="display: block;">
+        <form class="d-flex align-items-center w-50 text-center flex-column p-5 mt-4 glass" id="registrationForm">
+            <p class="text-light mb-3 fs-1"><strong>K</strong>özösségi <strong>E</strong>semények <strong>P</strong>ortálja</p>
             <div class="mb-3">
-                <input type="text" class="form-control" placeholder="Email" id="email">
+                <input type="text" class="form-control" placeholder="Felhasználó név" id="username">
             </div>
             <div class="mb-3">
                 <input type="text" class="form-control" placeholder="Jelszó" id="password">
             </div>
-            <input type="submit" class="btn-primary border rounded">
+            <button type="button" class="btn btn-light">Regisztráció</button>
+            <div class="line mt-4">
+            </div>
+            <div class="mt-3">
+                <a class="text-light linkStyle" href="/view/login.html">Ha már rendelkezzel fiókkal kattints ide</a>
+            </div>
             </form>
     </div>
-</body>
-</html>
 </body>
 </html>
