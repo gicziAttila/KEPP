@@ -3,11 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Közösségi Események Portálja</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Közösségi Események Portálja</title>
 </head>
+<style>
+    body {
+      background-image: url('/assets/background.svg');
+      background-repeat: no-repeat;
+    }
+    .kontener{
+        height: 100vh;
+    }
+    .glass{
+        background: rgba(255, 255, 255, 0.23);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(4.8px);
+        -webkit-backdrop-filter: blur(4.8px);
+    }
+    .linkStyle{
+        text-decoration: none;
+    }
+    .line {
+        width: 100%;
+        height: 0;
+        border: 1px solid #FFFFFF;
+        margin: 3px;
+        display:inline-block;
+    }
+</style>
 <body>
-    
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Esemény létrehozása
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Esemény létrehozása</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="input-group mb-3">
+                <span class="input-group-text glass" id="basic-addon2">Helyszín:</span>
+                <input type="text" class="form-control glass" value="">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text glass" id="basic-addon2">Szervező:</span>
+                <input type="text" class="form-control glass" value="">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text glass" id="basic-addon2">Dátum:</span>
+                <input type="date" class="form-control glass" value="">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Leírás</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Mégse</button>
+          <button type="button" class="btn btn-primary">Esemény mentése</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="container-fluid d-flex justify-content-center align-items-center flex-column kontener" style="display: block;">
+        <div class="row">
+            <div class="col-sm-4">
+              <div class="card glass">
+                <div class="card-body">
+                  <h5 class="card-title">Mangec</h5>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text glass" id="basic-addon2">Város:</span>
+                    <input type="text" class="form-control glass" value="Tatabánya" disabled>
+                  </div>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text glass" id="basic-addon2">Szervező:</span>
+                    <input type="text" class="form-control glass" value="kissJanos12" disabled>
+                  </div>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text glass" id="basic-addon2">Dátum:</span>
+                    <input type="date" class="form-control glass" value="2024-02-13" disabled>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Leírás</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" disabled>Naon jó lesz</textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card glass">
+                    <div class="card-body">
+                      <h5 class="card-title">Mangec</h5>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text glass" id="basic-addon2">Város:</span>
+                        <input type="text" class="form-control glass" value="Tatabánya" disabled>
+                      </div>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text glass" id="basic-addon2">Szervező:</span>
+                        <input type="text" class="form-control glass" value="kissJanos12" disabled>
+                      </div>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text glass" id="basic-addon2">Dátum:</span>
+                        <input type="date" class="form-control glass" value="2024-02-13" disabled>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Leírás</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" disabled>Naon jó lesz</textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            <div class="col-sm-4">
+                <div class="card glass">
+                    <div class="card-body">
+                      <h5 class="card-title">Mangec</h5>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text glass" id="basic-addon2">Város:</span>
+                        <input type="text" class="form-control glass" value="Tatabánya" disabled>
+                      </div>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text glass" id="basic-addon2">Szervező:</span>
+                        <input type="text" class="form-control glass" value="kissJanos12" disabled>
+                      </div>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text glass" id="basic-addon2">Dátum:</span>
+                        <input type="date" class="form-control glass" value="2024-02-13" disabled>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Leírás</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" disabled>Naon jó lesz</textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
 </body>
+<script>
+    function myFunction(x) {
+        x.classList.toggle("change");
+        document.getElementById('myDropdown').style.display = document.getElementById('myDropdown').style.display =='block' ?   'none' : 'block';
+}   
+</script>
 </html>
