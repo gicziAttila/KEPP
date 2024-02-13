@@ -1,0 +1,45 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyC7xvxOlaNCefNPG_k6zfzUy66tVrfHrzg",
+  authDomain: "kep-projekt-52ffc.firebaseapp.com",
+  projectId: "kep-projekt-52ffc",
+  storageBucket: "kep-projekt-52ffc.appspot.com",
+  messagingSenderId: "610304417358",
+  appId: "1:610304417358:web:14fa023540900344182d1f"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+
+
+
+
+
+
+
+//SRCIPT
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyC7xvxOlaNCefNPG_k6zfzUy66tVrfHrzg",
+    authDomain: "kep-projekt-52ffc.firebaseapp.com",
+    projectId: "kep-projekt-52ffc",
+    storageBucket: "kep-projekt-52ffc.appspot.com",
+    messagingSenderId: "610304417358",
+    appId: "1:610304417358:web:14fa023540900344182d1f"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
