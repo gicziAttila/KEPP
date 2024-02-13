@@ -81,6 +81,7 @@
                 .then(function (userCredential) {
                     var user = userCredential.user
                     console.log("Regisztráció sikeres")
+                    window.localtion.href = "index.html"
                 })
                 .catch(function (error) {
                     var errorCode = error.code;
