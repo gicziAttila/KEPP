@@ -47,7 +47,7 @@
             </div>
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <button type="button" class="btn btn-light mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Esemény létrehozása
                   </button>
                     <li class="nav-item">
@@ -59,7 +59,7 @@
                         </select>
                     </li>
                 <form class="d-flex mt-3" role="search">
-                    <input class="form-control me-2" type="text">
+                    <input class="form-control me-2" type="text" placeholder="Kezdjen el gépelni a kereséshez">
                     <button class="btn btn-success" type="submit">Keresés</button>
                 </form>
                 <button type="button" class="btn btn-danger mt-3">Kijelentkezés</button>
@@ -174,7 +174,7 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-6">
                   <div class="card glass">
                     <div class="card-body">
                       <h5 class="card-title">Mangec</h5>
@@ -197,6 +197,29 @@
                     </div>
                   </div>
                 </div>
+                <div class="col-sm-6">
+                    <div class="card glass">
+                      <div class="card-body">
+                        <h5 class="card-title">Mangec</h5>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text glass" id="basic-addon2">Város:</span>
+                          <input type="text" class="form-control glass" value="Tatabánya" disabled>
+                        </div>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text glass" id="basic-addon2">Szervező:</span>
+                          <input type="text" class="form-control glass" value="kissJanos12" disabled>
+                        </div>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text glass" id="basic-addon2">Dátum:</span>
+                          <input type="date" class="form-control glass" value="2024-02-13" disabled>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label">Leírás</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" disabled>Naon jó lesz</textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
           </div>
 </body>
 <script>
